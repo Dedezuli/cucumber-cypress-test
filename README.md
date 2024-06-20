@@ -1,55 +1,42 @@
-# qa-cypress
+# cypress-cucumber-boilerplate-for-e2e-testing
 
-Frontend testing for New Core using [Cypress](https://cypress.io)
+<img src="https://media-exp1.licdn.com/dms/image/C4E0BAQF1dg2KtKFdPg/company-logo_200_200/0/1626295436859?e=2159024400&v=beta&t=Ib_T9PXXQxkHRKnj3Oe65EKuR6EAh01IgAA6IGvU0FY" alt="exemplo imagem">
 
-## Getting Started
+> Cypress 10+ with Cucumber boilerplate project.
 
-These instructions will get you a copy of the project up and running on your local machine for testing purposes.
+### 💻 Topics
 
-### Prerequisites
+Integrated with:
 
-Install git and npm. For Debian/Ubuntu distribution:
+- [x] https://github.com/badeball/cypress-cucumber-preprocessor
+- [x] https://github.com/bahmutov/cypress-esbuild-preprocessor
+- [x] https://www.npmjs.com/package/multiple-cucumber-html-reporter
+- [x] https://github.com/cucumber/json-formatter
+- [x] https://github.com/Shelex/cypress-allure-plugin
 
-```
-$ sudo apt install npm git
-```
+(+ bundlers: https://github.com/badeball/cypress-cucumber-preprocessor/tree/master/examples)
 
-For Windows, download installer using links below:
+- ## 💻 Pre-requisites
 
-- [npm](https://nodejs.org/en/)
-- [git](https://git-scm.com/downloads)
-- [VScode](https://code.visualstudio.com/download)
+1. Node JS
+2. Optional: Java 8 for Allure Reporter
+3. Optional: Json-formatter for Native Reporter option(depends on your OS: https://github.com/cucumber/json-formatter)
 
-### Installing
+## 🚀 Install the project
 
-These are the steps to install frontend-tests
+Install project dependencies with: npm i
 
-```bash
-$ git clone git@github.com:DedeZuliana/cucumber-cypress.git
-$ cd cucumber-cypress
-$ npm install
-```
+## Run the demo:
 
-## Usage
+1. Standard Execution: npm run cypress:execution
+2. Native report(with JSON FORMATTER): Check how to do it in this video: [Cucumber BDD Report - YouTube](https://www.youtube.com/watch?v=5AGXK9cL2fs&t=2s&ab_channel=JoanMedia)
+3. Allure Report: 
+   1. npm run cypress:execution-allure
+   2. npm run allure:report
+   3. allure open
+   4. You'll get a report like this one: GitHub Page - Allure Report Sample: https://joanesquivel.github.io/cypress-cucumber-boilerplate/
 
-To development purpose, use Cypress GUI to run the test
 
-```
-$ npx cypress open
-```
+##  Sample repo to generate an allure report as an artifact using GH Actions
 
-To run headless Cypress
-
-```
-$ npx cypress run
-```
-
-To run headless Cypress single module
-
-### Intelligent Code Completion
-
-Always put this line at the top of spec file
-
-```
-/// <reference types="Cypress" />
-```
+* https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
